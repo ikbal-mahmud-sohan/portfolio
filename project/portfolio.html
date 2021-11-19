@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3d4bfcc1b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <title>Sohan</title>
+</head>
+<body onload="changeTitle (),imgFun()">
+<section class="min-h-screen overflow-hidden">
+    <div class="flex flex-wrap h-screen">
+        <div class="hidden lg:block lg:w-5/12 xl:w-4/12">
+             <img  id="mainimg" class="h-screen w-full object-cover" src="images/main2-01.jpeg" alt=""> 
+        </div>
+        <div class="w-full lg:w-7/12 xl:w-8/12  bg-black relative  ">
+            <!-- main sec -->
+            <div id="modal-out" class=" absolute top-0  w-full bg-black">
+                <!-- main sec -->
+            <div class="flex flex-wrap mt-10 px-4 py-4 ">
+                <div id="" class="w-full md:w-1/2  px-4 py-4 ">
+                    <div class="flex h-full py-4 w-full items-center group overflow-hidden">
+                        <div class="w-full text-center ">
+                            <p class="text-base md:text-2xl uppercase text-white ">Hi There ! I'm</p>
+                            <h2 class="text-4xl md:text-7xl text-white font-extrabold group-hover:text-gray-400 uppercase my-4">sohan</h2>
+                            <!-- <h2 id="title-text" class="mx-auto text-xl title md:text-3xl uppercase font-semibold text-yellow-400 transition-all duration-500">web designer</h2>
+                         -->
+                        <div class="relative md:py-0 py-8">
+                            <h2 id="title-web" class="title absolute -left-full top-0 mx-auto text-xl title md:text-3xl uppercase font-semibold text-yellow-400">web designer</h2>
+                            <h2 id="title-dev" class="title absolute -left-full top-0 mx-auto text-xl title md:text-3xl uppercase font-semibold text-yellow-400">developer</h2>
+                            <h2 id="title-blog" class="title absolute -left-full top-0 mx-auto text-xl title md:text-3xl uppercase font-semibold text-yellow-400">blogger</h2>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="aboutClick" class="clicksec w-full md:w-1/2  px-4 py-4 cursor-pointer">
+                    <div class="flex bg-bggray md:py-48 py-8 h-full w-full items-center group">
+                        <div class="w-full mx-auto ">
+                           <h2 class="text-2xl md:text-4xl font-extrabold text-center uppercase"><span id="aboutover" class="text-white group-hover:text-yellow-400 transition-all">about</span> <span class="animate-pulse text-yellow-400 group-hover:text-white delay-100">me</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="portfolioClick" class="clicksec w-full md:w-1/2  px-4 py-4 cursor-pointer">
+                    <div class="flex bg-bggray md:py-48 py-8 h-full w-full items-center">
+                        <div class="w-full mx-auto">
+                            <h2 class="text-2xl md:text-4xl font-extrabold text-center uppercase "><span class="text-white ">my</span> <span class="animate-pulse text-yellow-400">portfolio</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div id="getInTouchclick" class="clicksec w-full md:w-1/2  px-4 py-4 cursor-pointer">
+                    <div class="flex bg-bggray md:py-48 py-8 h-full w-full items-center">
+                        <div class="w-full mx-auto">
+                            <h2 class="text-2xl md:text-4xl font-extrabold text-center uppercase "><span class="text-white ">Get</span> <span class="animate-pulse text-yellow-400">in touch</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- modal start-->
+            <!-- ----------------------about me----------------- -->
+            <section id="about-me" class="openSec closItem absolute  w-full">
+                <div class="flex flex-wrap mt-14 overflow-y-auto conten-height">
+                    <div id="closemod" class="close-cross cursor-pointer fixed right-12 top-20 z-50"><img class="w-8" src="images/close.svg" alt=""></div>
+                    <div id="itemfull" class="w-full px-4">
+                        <div class="flex bg-bggray px-12 py-4 h-full w-full items-center ">
+                            <div class="w-full ">
+                                <div class="w-full mx-auto border-b border-gray-600">
+                                    <h2 class="text-3xl md:text-5xl font-extrabold text-center uppercase my-4 "><span class="text-white">about</span> <span class=" text-yellow-400">me</span></h2>
+                                    <div class="flex py-2">
+                                        <div class="w-full custom-width bg-white mt-4 ml-40 mr-4"></div>
+                                        <div class="text-white"><img class="w-20 animate-spin" src="images/profile.svg" alt=""></div>
+                                        <div class="w-full custom-width bg-white mt-4 mr-40 ml-4"></div>
+                                    </div>
+                                    <div class="personal-information">
+                                    <div class="py-4">
+                                    <h2 class="text-white my-1 text-2xl uppercase"> <span class="mr-2"><i class="fas fa-user"></i></span> Personal Info</h2>
+                                    </div>
+                                    <p class="text-white my-1">I'm a Freelance Web Designer & Developer based in Moscow, Russia. I have serious passion for UI effects, animations and creating </p>
+                                     <p class="text-white my-1">intuitive, with over a decade of experience.</p>
+                                     <div class="flex flex-wrap my-8">
+                                         <div class="md:w-1/2 w-full capitalize">
+                                             <p class="text-white my-1"><span class=" font-extrabold mr-2">First Name:</span>  <span>Ikbal Mahmud</span></p>
+                                             <p class="text-white my-1"><span class=" font-extrabold mr-2">last Name:</span>  <span>Sohan</span></p>
+                                             <p class="text-white my-1"><span class=" font-extrabold mr-2">Date of birth:</span>  <span>13 nov 1996</span></p>
+                                             <p class="text-white my-1"><span class=" font-extrabold mr-2">Nationality:</span> <span> Bangladeshi</span></p>
+                                             <p class="text-white my-1"><span class=" font-extrabold mr-2">Freelance:</span>  <span>Available</span></p>
+                                         </div>
+                                         <div class="md:w-1/2 w-full capitalize">
+                                            <p class="text-white my-1"><span class=" font-extrabold mr-2">Phone:</span>  <span>+88 01710 562222</span></p>
+                                            <p class="text-white my-1"><span class=" font-extrabold mr-2">Address:</span> <span>Khulna , Bangladesh</span></p>
+                                            <p class="text-white my-1"><span class=" font-extrabold mr-2">Email:</span>  <span>sohan@codmen.net</span></p>
+                                            <p class="text-white my-1"><span class=" font-extrabold mr-2">Spoken Langages:</span> <span>Bangla,English</span></p>
+                                            <p class="text-white my-1"><span class=" font-extrabold mr-2">Skype:</span> <span>ikbalmahmudsohan@gmail.com</span></p>
+                                         </div>
+                                         <div class="btn py-8">
+                                             <button name="resume" class="my-4 inline-block px-8 py-3 uppercase border border-yellow-400 bg-yellow-400 text-white font-bold mr-4" href="javascript:;">download resume <span class="ml-2"><i class="far fa-file-pdf"></i></span></button>
+                                             <a class="my-4 inline-block px-8 py-3 uppercase border border-yellow-400 font-bold text-yellow-400 hover:bg-yellow-400 hover:text-white "  href="include/blog.html" target="blank">my blog</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 </div>
+                                 <div class="exedskil py-4 border-b border-gray-600 md:pb-0 pb-40">
+                                     <div class="flex flex-wrap items-center">
+                                         <div class="2xl:w-1/3 w-full">
+                                             <div id="experienceBtn" class="flex cursor-pointer w-98 border border-yellow-400 bg-yellow-400 hover:bg-opacity-90 text-white px-4 py-6  my-8 shadow-md">
+                                                 <p class=" uppercase text-xl mr-4"><i class="fas fa-briefcase"></i></p>
+                                                 <p class=" uppercase text-xl">experience</p>
+                                             </div>
+                                             <div id="educationBtn" class="flex cursor-pointer w-98 border border-gray-700 hover:border-gray-500  px-4 py-6 text-gray-500 my-8 shadow-md">
+                                                <p class=" uppercase text-xl mr-4"><i class="fas fa-graduation-cap"></i></p>
+                                                <p class=" uppercase text-xl">education</p>
+                                            </div>
+                                            <div id="skillsBtn" class="flex cursor-pointer w-98 border border-gray-700 hover:border-gray-500  px-4 py-6 text-gray-500 my-8 shadow-md">
+                                                <p class=" uppercase texskillst-xl mr-4"><i class="fas fa-star"></i></p>
+                                                <p class=" uppercase text-xl">skills</p>
+                                            </div>
+                                         </div>
+                                         <div class="2xl:w-2/3 w-full">
+                                            <ul id="slideinfo " class="relative ex-height">
+                                                <li id="experiance" class="absolute md:mx-32 mx-4   content-width ">
+                                                    <div class=" bg-black text-center text-yellow-400 py-8 cursor-pointer border border-gray-700">
+                                                        <p class=" uppercase text-xl"><span class="mr-2"><i class="fas fa-briefcase"></i></span>experience</p>
+                                                    </div>
+                                                    <div class="border bg-gray-900 border-gray-700 liheight px-4 py-4">
+                                                        <div>
+                                                            <h2 class=" text-gray-400 py-1 font-bold uppercase ">Web Designer - Codemen</h2>
+                                                            <p class=" text-gray-400 py-1 text-sm"> <span class="mr-1"><i class="far fa-calendar-check"></i></span> 2021 - Present</p>
+                                                            <p class=" text-gray-400 py-1 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit impedit alias </p>
+                                                            <div class="w-28 bg-yellow-400 h-1 my-4"></div>
+                                                        </div>
+                                                        <div>
+                                                            <h2 class=" text-gray-400 py-1 font-bold uppercase ">Web Designer - Upwork</h2>
+                                                            <p class=" text-gray-400 py-1 text-sm"> <span class="mr-1"><i class="far fa-calendar-check"></i></span> 2020 - Present</p>
+                                                            <p class=" text-gray-400 py-1 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit impedit alias </p>
+                                                            <div class="w-28 bg-yellow-400 h-1 my-4"></div>
+                                                        </div>
+                                                        <div>
+                                                            <h2 class=" text-gray-400 py-1 font-bold uppercase ">Web Designer - Fiverr</h2>
+                                                            <p class=" text-gray-400 py-1 text-sm"> <span class="mr-1"><i class="far fa-calendar-check"></i></span> 2020 - Present</p>
+                                                            <p class=" text-gray-400 py-1 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit impedit alias </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li id="education" class="absolute md:mx-32 mx-4   content-width ">
+                                                    <div class=" bg-black text-center text-yellow-400 py-8 cursor-pointer border border-gray-700">
+                                                        <p class=" uppercase text-xl"><span class="mr-2"><i class="fas fa-briefcase"></i></span>education</p>
+                                                    </div>
+                                                    <div class="border bg-gray-900 border-gray-700 liheight px-4 py-4">
+                                                        <div>
+                                                            <h2 class=" text-gray-400 py-1 font-bold uppercase ">Bachelor Degree - North Western University</h2>
+                                                            <p class=" text-gray-400 py-1 text-sm"> <span class="mr-1"><i class="far fa-calendar-check"></i></span> 2016 - 2020</p>
+                                                            <p class=" text-gray-400 py-1 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit impedit alias </p>
+                                                            <div class="w-28 bg-yellow-400 h-1 my-4"></div>
+                                                        </div>
+                                                        <div>
+                                                            <h2 class=" text-gray-400 py-1 font-bold uppercase ">H.S.C - Govt. Sundarban Adarsha College, Khulna</h2>
+                                                            <p class=" text-gray-400 py-1 text-sm"> <span class="mr-1"><i class="far fa-calendar-check"></i></span> 2012 - 2014</p>
+                                                            <p class=" text-gray-400 py-1 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit impedit alias </p>
+                                                            <div class="w-28 bg-yellow-400 h-1 my-4"></div>
+                                                        </div>
+                                                        <div>
+                                                            <h2 class=" text-gray-400 py-1 font-bold uppercase ">S.S.C - Khulna Public College</h2>
+                                                            <p class=" text-gray-400 py-1 text-sm"> <span class="mr-1"><i class="far fa-calendar-check"></i></span> 2007 - 2012</p>
+                                                            <p class=" text-gray-400 py-1 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit impedit alias </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li id="skills" class="absolute md:mx-32 mx-4   content-width ">
+                                                    <div class=" bg-black text-center text-yellow-400 py-8 cursor-pointer border border-gray-700 w-98">
+                                                        <p class=" uppercase text-xl"><span class="mr-2"><i class="fas fa-briefcase"></i></span>skills</p>
+                                                    </div>
+                                                    <div class="border bg-gray-900 border-gray-700 liheight px-4 py-4">
+                                                        <div class="flex flex-wrap">
+                                                            <div class="w-1/2 py-2">
+                                                                <h2 class=" text-white uppercase my-2">html  </h2>
+                                                                <span class=" text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+                                                            </div>
+                                                            <div class="w-1/2 py-2">
+                                                                <h2 class=" text-white uppercase my-2">wordpress </h2>
+                                                                <span class=" text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+                                                            </div>
+                                                            <div class="w-1/2 py-2">
+                                                                <h2 class=" text-white uppercase my-2">javascript</h2>
+                                                                <span class=" text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+                                                            </div>
+                                                            <div class="w-1/2 py-2">
+                                                                <h2 class=" text-white uppercase my-2">joomla  </h2>
+                                                                <span class=" text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+                                                            </div>
+                                                            <div class="w-1/2 py-2">
+                                                                <h2 class=" text-white uppercase my-2">css  </h2>
+                                                                <span class=" text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+                                                            </div>
+                                                            <div class="w-1/2 py-2">
+                                                                <h2 class=" text-white uppercase my-2">magento  </h2>
+                                                                <span class=" text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+                                                            </div>
+                                                            <div class="w-1/2 py-2">
+                                                                <h2 class=" text-white uppercase my-2">drupal  </h2>
+                                                                <span class=" text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+                                                            </div>
+                                                            <div class="w-1/2 py-2">
+                                                                <h2 class=" text-white uppercase my-2">jquery  </h2>
+                                                                <span class=" text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+                                                            </div>
+                                                            <div class="w-1/2 py-2">
+                                                                <h2 class=" text-white uppercase my-2">Adobe Photoshop  </h2>
+                                                                <span class=" text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+                                                            </div>
+                                                            <div class="w-1/2 py-2">
+                                                                <h2 class=" text-white uppercase my-2">angular js  </h2>
+                                                                <span class=" text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>   
+                                            </ul>
+                                        </div>
+                                     </div>
+                                 </div>
+                                 <div class="skills py-4">
+                                     <div class="flex flex-wrap items-center xl:pt-4 xl:pb-4 pt-4 pb-60">
+                                         <div class="md:w-1/3 w-full py-4 text-center">
+                                            <p class="text-5xl text-gray-500"><i class="fas fa-briefcase"></i></p>
+                                            <h2 class="text-5xl text-yellow-400 font-bold py-4"><span class="counter" data-target="4"></span><span>+</span></h2>
+                                            <p class=" uppercase text-xl font-bold text-white">Years Experience</p>
+                                         </div>
+                                         <div class="md:w-1/3 w-full py-4 text-center">
+                                            <p class="text-5xl text-gray-500"><i class="far fa-handshake"></i></p>
+                                            <h2 class="text-5xl text-yellow-400 font-bold py-4"><span class="counter" data-target="89"></span><span>+</span></h2>
+                                            <p class=" uppercase text-xl font-bold text-white">Done Projects</p>
+                                         </div>
+                                         <div class="md:w-1/3 w-full py-4 text-center">
+                                            <p class="text-5xl text-gray-500"><i class="far fa-heart"></i></p>
+                                            <h2 class="text-5xl text-yellow-400 font-bold py-4"><span class="counter" data-target="77"></span><span>+</span></h2>
+                                            <p class=" uppercase text-xl font-bold text-white">Happy customers</p>
+                                         </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+               <!-- -------------------my portfolio------------ -->
+               <section id="portfolio" class="openSec closItem absolute top-0 w-full">
+                <div class="flex flex-wrap mt-14 overflow-y-auto conten-height">
+                    <div id="closePortfolio" class="close-cross cursor-pointer fixed right-12 top-20"><img class="w-8" src="images/close.svg" alt=""></div>
+                    <div id="portfolio-main-sec" class="w-full px-4 ">
+                        <div class="flex bg-bggray px-12 py-4 h-full w-full">
+                            <div class="w-full">
+                                <div class="w-full mx-auto">
+                                    <h2 class="text-3xl md:text-5xl font-extrabold text-center uppercase my-4 "><span class="text-white">my</span> <span class=" text-yellow-400"> portfolio</span></h2>
+                                    <div class="flex py-2">
+                                        <div class="w-full custom-width bg-white mt-4 ml-40 mr-4"></div>
+                                        <div class="text-white"><span class=" text-gray-500 text-3xl animate-pulse "><i class="fas fa-suitcase"></i></span></div>
+                                        <div class="w-full custom-width bg-white mt-4 mr-40 ml-4"></div>
+                                    </div>
+                                    <div class="flex flex-wrap">
+                                        <div id="portfolio-subsec-click-one" class="prtSub md:w-1/3 w-full px-4 py-4  ">
+                                            <a href="javascript:;" class="port-left-show relative block h-52 overflow-hidden">
+                                            <div class="w-full   absolute top-0 left-0">
+                                                <img class="w-full" src="images/11.jpg" alt="">
+                                            </div>
+                                            <div class="hover-item transition-all duration-700 w-full h-full bg-yellow-400 absolute top-0 -left-full flex items-center justify-center uppercase " >
+                                                <p class=" uppercase text-white font-bold">Image Project</p>
+                                            </div>
+                                        </a>
+                                        </div>
+                                        <div id="portfolio-subsec-click-two" class="prtSub md:w-1/3 w-full px-4 py-4  ">
+                                            <a href="javascript:;" class="port-left-show relative block h-52 overflow-hidden">
+                                            <div class="w-full   absolute top-0 left-0">
+                                                <img class="w-full" src="images/22.jpg" alt="">
+                                            </div>
+                                            <div class="hover-item transition-all duration-700 w-full h-full bg-yellow-400 absolute top-0 -left-full flex items-center justify-center uppercase " >
+                                                <p class=" uppercase text-white font-bold">slider project</p>
+                                            </div>
+                                        </a>
+                                        </div>
+                                        <div id="portfolio-subsec-click-three" class="prtSub md:w-1/3 w-full px-4 py-4  ">
+                                            <a href="javascript:;" class="port-left-show relative block h-52 overflow-hidden">
+                                            <div class="w-full   absolute top-0 left-0">
+                                                <img class="w-full" src="images/33.jpg" alt="">
+                                            </div>
+                                            <div class="hover-item transition-all duration-700 w-full h-full bg-yellow-400 absolute top-0 -left-full flex items-center justify-center uppercase  " >
+                                                <p class=" uppercase text-white font-bold">youtube video</p>
+                                            </div>
+                                        </a>
+                                        </div>
+                                        <div id="portfolio-subsec-click-four" class="prtSub md:w-1/3 w-full px-4 py-4  ">
+                                            <a href="javascript:;" class="port-left-show relative block h-52 overflow-hidden">
+                                            <div class="w-full   absolute top-0 left-0">
+                                                <img class="w-full" src="images/44.jpg" alt="">
+                                            </div>
+                                            <div class="hover-item transition-all duration-700 w-full h-full bg-yellow-400 absolute top-0 -left-full flex items-center justify-center uppercase  " >
+                                                <p class=" uppercase text-white font-bold">local project</p>
+                                            </div>
+                                        </a>
+                                        </div>
+                                        <div id="portfolio-subsec-click-five" class="prtSub md:w-1/3 w-full px-4 py-4  ">
+                                            <a href="javascript:;" class="port-left-show relative block h-52 overflow-hidden">
+                                            <div class="w-full   absolute top-0 left-0">
+                                                <img class="w-full" src="images/55.jpg" alt="">
+                                            </div>
+                                            <div class="hover-item transition-all duration-700 w-full h-full bg-yellow-400 absolute top-0 -left-full flex items-center justify-center uppercase  " >
+                                                <p class=" uppercase text-white font-bold">portfolio</p>
+                                            </div>
+                                        </a>
+                                        </div>
+                                        <div id="portfolio-subsec-click-six" class="prtSub md:w-1/3 w-full px-4 py-4  ">
+                                            <a href="javascript:;" class="port-left-show relative block h-52 overflow-hidden">
+                                            <div class="w-full   absolute top-0 left-0">
+                                                <img class="w-full" src="images/66.jpg" alt="">
+                                            </div>
+                                            <div class="hover-item transition-all duration-700 w-full h-full bg-yellow-400 absolute top-0 -left-full flex items-center justify-center uppercase  " >
+                                                <p class=" uppercase text-white font-bold">portfolio</p>
+                                            </div>
+                                        </a>
+                                        </div>
+                                        <div id="portfolio-subsec-click-seven" class="prtSub md:w-1/3 w-full px-4 py-4  ">
+                                            <a href="javascript:;" class="port-left-show relative block h-52 overflow-hidden">
+                                            <div class="w-full   absolute top-0 left-0">
+                                                <img class="w-full" src="images/77.jpg" alt="">
+                                            </div>
+                                            <div class="hover-item transition-all duration-700 w-full h-full bg-yellow-400 absolute top-0 -left-full flex items-center justify-center uppercase  " >
+                                                <p class=" uppercase text-white font-bold">portfolio</p>
+                                            </div>
+                                        </a>
+                                        </div>
+                                        <div id="portfolio-subsec-click-eight" class="prtSub md:w-1/3 w-full px-4 py-4  ">
+                                            <a href="javascript:;" class="port-left-show relative block h-56 overflow-hidden">
+                                            <div class="w-full   absolute top-0 left-0">
+                                                <img class="w-full" src="images/88.jpg" alt="">
+                                            </div>
+                                            <div class="hover-item transition-all duration-700 w-full h-full bg-yellow-400 absolute top-0 -left-full flex items-center justify-center uppercase  " >
+                                                <p class=" uppercase text-white font-bold">food</p>
+                                            </div>
+                                        </a>
+                                        </div>
+                                        <div id="portfolio-subsec-click-nine" class="prtSub md:w-1/3 w-full px-4 py-4  ">
+                                            <a href="javascript:;" class="port-left-show relative block h-56 overflow-hidden">
+                                            <div class="w-full   absolute top-0 left-0">
+                                                <img class="w-full" src="images/99.jpg" alt="">
+                                            </div>
+                                            <div class="hover-item transition-all duration-700 w-full h-full bg-yellow-400 absolute top-0 -left-full flex items-center justify-center uppercase  " >
+                                                <p class=" uppercase text-white font-bold">portfolio</p>
+                                            </div>
+                                        </a>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                      <!-- portfolio sub sec start -->
+                      <!-- slide one -->
+                    <div id="portfolio-sub-sec-one" class="prtSubShow w-full px-4 relative hidden">
+                        <div id="closePortfolioSub" class="closePortfolioSubcls cursor-pointer absolute  right-10 top-6"><img class="w-8" src="images/close.svg" alt=""></div>
+                        <div class="flex  px-12 bg-bggray py-4 h-full w-full items-center">
+                            <div class="w-full">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full sm:w-6/12 px-4">
+                                        <div class="flex items-center h-full">
+                                            <img src="images/11.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-full sm:w-6/12">
+                                        <div class="flex items-center h-full px-4">
+                                            <div class="w-full text-white ">
+                                                <div class="w-full border-b border-gray-700 py-8 space-y-2 ">
+                                                <h2 class="text-2xl uppercase py-1">Image Project</h2>
+                                                <p class="capitalize"><span><i class="far fa-user"></i></span> <span>Client : Envato</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar"></i></span> <span>Start Date : 02/11/2017</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar-check"></i></span> <span> End Date : 02/08/2018</span></p>
+                                                <p class="capitalize"><span><i class="fas fa-users-cog"></i></span> <span>Used Technologies : php, html, css, javascript</span></p>
+                                            </div>
+                                                <div class="pBtn py-6">
+                                                    <a class=" inline-block text-white px-10 py-3 bg-yellow-400 font-bold shadow-md uppercase" href="javascript:;">preview <span><i class="fa fa-external-link"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- slide two -->
+                     <div id="portfolio-sub-sec-two" class="prtSubShow w-full px-4 relative hidden">
+                        <div id="closePortfolioSub" class="closePortfolioSubcls cursor-pointer absolute  right-10 top-6"><img class="w-8" src="images/close.svg" alt=""></div>
+                        <div class="flex  px-12 bg-bggray py-4 h-full w-full items-center">
+                            <div class="w-full">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full sm:w-6/12 px-4">
+                                        <div class="flex items-center h-full">
+                                            <img src="images/22.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-full sm:w-6/12">
+                                        <div class="flex items-center h-full px-4">
+                                            <div class="w-full text-white ">
+                                                <div class="w-full border-b border-gray-700 py-8 space-y-2 ">
+                                                <h2 class="text-2xl uppercase py-1">slider project</h2>
+                                                <p class="capitalize"><span><i class="far fa-user"></i></span> <span>Client : Envato</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar"></i></span> <span>Start Date : 02/11/2017</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar-check"></i></span> <span> End Date : 02/08/2018</span></p>
+                                                <p class="capitalize"><span><i class="fas fa-users-cog"></i></span> <span>Used Technologies : php, html, css, javascript</span></p>
+                                            </div>
+                                                <div class="pBtn py-6">
+                                                    <a class=" inline-block text-white px-10 py-3 bg-yellow-400 font-bold shadow-md uppercase" href="javascript:;">preview <span><i class="fa fa-external-link"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- slide three -->
+                     <div id="portfolio-sub-sec-three" class="prtSubShow w-full px-4 relative hidden">
+                        <div id="closePortfolioSub" class="closePortfolioSubcls cursor-pointer absolute  right-10 top-6"><img class="w-8" src="images/close.svg" alt=""></div>
+                        <div class="flex  px-12 bg-bggray py-4 h-full w-full items-center">
+                            <div class="w-full">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full sm:w-6/12 px-4">
+                                        <div class="flex items-center h-full">
+                                            <iframe class="w-full h-full" src="video/1.mp4" frameborder="0" scrolling="no"  ></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="w-full sm:w-6/12">
+                                        <div class="flex items-center h-full px-4">
+                                            <div class="w-full text-white ">
+                                                <div class="w-full border-b border-gray-700 py-8 space-y-2 ">
+                                                <h2 class="text-2xl uppercase py-1">local video</h2>
+                                                <p class="capitalize"><span><i class="far fa-user"></i></span> <span>Client : Envato</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar"></i></span> <span>Start Date : 02/11/2017</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar-check"></i></span> <span> End Date : 02/08/2018</span></p>
+                                                <p class="capitalize"><span><i class="fas fa-users-cog"></i></span> <span>Used Technologies : php, html, css, javascript</span></p>
+                                            </div>
+                                                <div class="pBtn py-6">
+                                                    <a class=" inline-block text-white px-10 py-3 bg-yellow-400 font-bold shadow-md uppercase" href="javascript:;">preview <span><i class="fa fa-external-link"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- slide four -->
+                     <div id="portfolio-sub-sec-four" class="prtSubShow w-full px-4 relative hidden">
+                        <div id="closePortfolioSub" class="closePortfolioSubcls cursor-pointer absolute  right-10 top-6"><img class="w-8" src="images/close.svg" alt=""></div>
+                        <div class="flex  px-12 bg-bggray py-4 h-full w-full items-center">
+                            <div class="w-full">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full sm:w-6/12 px-4">
+                                        <div class="flex items-center h-full">
+                                            <img src="images/44.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-full sm:w-6/12">
+                                        <div class="flex items-center h-full px-4">
+                                            <div class="w-full text-white ">
+                                                <div class="w-full border-b border-gray-700 py-8 space-y-2 ">
+                                                <h2 class="text-2xl uppercase py-1">local Project</h2>
+                                                <p class="capitalize"><span><i class="far fa-user"></i></span> <span>Client : Envato</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar"></i></span> <span>Start Date : 02/11/2017</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar-check"></i></span> <span> End Date : 02/08/2018</span></p>
+                                                <p class="capitalize"><span><i class="fas fa-users-cog"></i></span> <span>Used Technologies : php, html, css, javascript</span></p>
+                                            </div>
+                                                <div class="pBtn py-6">
+                                                    <a class=" inline-block text-white px-10 py-3 bg-yellow-400 font-bold shadow-md uppercase" href="javascript:;">preview <span><i class="fa fa-external-link"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- slide five -->
+                     <div id="portfolio-sub-sec-five" class="prtSubShow w-full px-4 relative hidden">
+                        <div id="closePortfolioSub" class="closePortfolioSubcls cursor-pointer absolute  right-10 top-6"><img class="w-8" src="images/close.svg" alt=""></div>
+                        <div class="flex  px-12 bg-bggray py-4 h-full w-full items-center">
+                            <div class="w-full">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full sm:w-6/12 px-4">
+                                        <div class="flex items-center h-full">
+                                            <img src="images/55.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-full sm:w-6/12">
+                                        <div class="flex items-center h-full px-4">
+                                            <div class="w-full text-white ">
+                                                <div class="w-full border-b border-gray-700 py-8 space-y-2 ">
+                                                <h2 class="text-2xl uppercase py-1">Image Project</h2>
+                                                <p class="capitalize"><span><i class="far fa-user"></i></span> <span>Client : Envato</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar"></i></span> <span>Start Date : 02/11/2017</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar-check"></i></span> <span> End Date : 02/08/2018</span></p>
+                                                <p class="capitalize"><span><i class="fas fa-users-cog"></i></span> <span>Used Technologies : php, html, css, javascript</span></p>
+                                            </div>
+                                                <div class="pBtn py-6">
+                                                    <a class=" inline-block text-white px-10 py-3 bg-yellow-400 font-bold shadow-md uppercase" href="javascript:;">preview <span><i class="fa fa-external-link"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- slide  six-->
+                     <div id="portfolio-sub-sec-six" class="prtSubShow w-full px-4 relative hidden">
+                        <div id="closePortfolioSub" class="closePortfolioSubcls cursor-pointer absolute  right-10 top-6"><img class="w-8" src="images/close.svg" alt=""></div>
+                        <div class="flex  px-12 bg-bggray py-4 h-full w-full items-center">
+                            <div class="w-full">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full sm:w-6/12 px-4">
+                                        <div class="flex items-center h-full">
+                                            <img src="images/66.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-full sm:w-6/12">
+                                        <div class="flex items-center h-full px-4">
+                                            <div class="w-full text-white ">
+                                                <div class="w-full border-b border-gray-700 py-8 space-y-2 ">
+                                                <h2 class="text-2xl uppercase py-1">Image Project</h2>
+                                                <p class="capitalize"><span><i class="far fa-user"></i></span> <span>Client : Envato</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar"></i></span> <span>Start Date : 02/11/2017</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar-check"></i></span> <span> End Date : 02/08/2018</span></p>
+                                                <p class="capitalize"><span><i class="fas fa-users-cog"></i></span> <span>Used Technologies : php, html, css, javascript</span></p>
+                                            </div>
+                                                <div class="pBtn py-6">
+                                                    <a class=" inline-block text-white px-10 py-3 bg-yellow-400 font-bold shadow-md uppercase" href="javascript:;">preview <span><i class="fa fa-external-link"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- slide  seven-->
+                     <div id="portfolio-sub-sec-seven" class="prtSubShow w-full px-4 relative hidden">
+                        <div id="closePortfolioSub" class="closePortfolioSubcls cursor-pointer absolute  right-10 top-6"><img class="w-8" src="images/close.svg" alt=""></div>
+                        <div class="flex  px-12 bg-bggray py-4 h-full w-full items-center">
+                            <div class="w-full">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full sm:w-6/12 px-4">
+                                        <div class="flex items-center h-full">
+                                            <img src="images/77.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-full sm:w-6/12">
+                                        <div class="flex items-center h-full px-4">
+                                            <div class="w-full text-white ">
+                                                <div class="w-full border-b border-gray-700 py-8 space-y-2 ">
+                                                <h2 class="text-2xl uppercase py-1">Image Project</h2>
+                                                <p class="capitalize"><span><i class="far fa-user"></i></span> <span>Client : Envato</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar"></i></span> <span>Start Date : 02/11/2017</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar-check"></i></span> <span> End Date : 02/08/2018</span></p>
+                                                <p class="capitalize"><span><i class="fas fa-users-cog"></i></span> <span>Used Technologies : php, html, css, javascript</span></p>
+                                            </div>
+                                                <div class="pBtn py-6">
+                                                    <a class=" inline-block text-white px-10 py-3 bg-yellow-400 font-bold shadow-md uppercase" href="javascript:;">preview <span><i class="fa fa-external-link"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- slide  eight-->
+                     <div id="portfolio-sub-sec-eight" class="prtSubShow w-full px-4 relative hidden">
+                        <div id="closePortfolioSub" class="closePortfolioSubcls cursor-pointer absolute  right-10 top-6"><img class="w-8" src="images/close.svg" alt=""></div>
+                        <div class="flex  px-12 bg-bggray py-4 h-full w-full items-center">
+                            <div class="w-full">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full sm:w-6/12 px-4">
+                                        <div class="flex items-center h-full">
+                                            <img src="images/88.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-full sm:w-6/12">
+                                        <div class="flex items-center h-full px-4">
+                                            <div class="w-full text-white ">
+                                                <div class="w-full border-b border-gray-700 py-8 space-y-2 ">
+                                                <h2 class="text-2xl uppercase py-1">Image Project</h2>
+                                                <p class="capitalize"><span><i class="far fa-user"></i></span> <span>Client : Envato</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar"></i></span> <span>Start Date : 02/11/2017</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar-check"></i></span> <span> End Date : 02/08/2018</span></p>
+                                                <p class="capitalize"><span><i class="fas fa-users-cog"></i></span> <span>Used Technologies : php, html, css, javascript</span></p>
+                                            </div>
+                                                <div class="pBtn py-6">
+                                                    <a class=" inline-block text-white px-10 py-3 bg-yellow-400 font-bold shadow-md uppercase" href="javascript:;">preview <span><i class="fa fa-external-link"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- slide nine -->
+                     <div id="portfolio-sub-sec-nine" class="prtSubShow w-full px-4 relative hidden">
+                        <div id="closePortfolioSub" class="closePortfolioSubcls cursor-pointer absolute  right-10 top-6"><img class="w-8" src="images/close.svg" alt=""></div>
+                        <div class="flex  px-12 bg-bggray py-4 h-full w-full items-center">
+                            <div class="w-full">
+                                <div class="flex flex-wrap">
+                                    <div class="w-full sm:w-6/12 px-4">
+                                        <div class="flex items-center h-full">
+                                            <img src="images/99.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="w-full sm:w-6/12">
+                                        <div class="flex items-center h-full px-4">
+                                            <div class="w-full text-white ">
+                                                <div class="w-full border-b border-gray-700 py-8 space-y-2 ">
+                                                <h2 class="text-2xl uppercase py-1">Image Project</h2>
+                                                <p class="capitalize"><span><i class="far fa-user"></i></span> <span>Client : Envato</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar"></i></span> <span>Start Date : 02/11/2017</span></p>
+                                                <p class="capitalize"><span><i class="far fa-calendar-check"></i></span> <span> End Date : 02/08/2018</span></p>
+                                                <p class="capitalize"><span><i class="fas fa-users-cog"></i></span> <span>Used Technologies : php, html, css, javascript</span></p>
+                                            </div>
+                                                <div class="pBtn py-6">
+                                                    <a class=" inline-block text-white px-10 py-3 bg-yellow-400 font-bold shadow-md uppercase" href="javascript:;">preview <span><i class="fa fa-external-link"></i></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- portfolio sub sec end-->
+                </div>
+            </section>
+            <!-- -------------------get in touch------------ -->
+            <section id="contact-us" class="openSec closItem absolute top-0 w-full">
+                <div class="flex flex-wrap mt-14 overflow-y-auto conten-height">
+                    <div id="closeContact" class="close-cross cursor-pointer fixed right-12 top-20"><img class="w-8" src="images/close.svg" alt=""></div>
+                    <div id="itemfull" class="w-full px-4">
+                        <div class="flex bg-bggray px-12 py-4 h-full w-full">
+                            <div class="w-full">
+                                <div class="w-full mx-auto">
+                                    <h2 class="text-3xl md:text-5xl font-extrabold text-center uppercase py-4 "><span class="text-white"> get </span> <span class=" text-yellow-400">in touch</span></h2>
+                                    <div class="flex py-8">
+                                        <div class="w-full custom-width bg-white mt-4 ml-40 mr-4"></div>
+                                        <div class="text-white"><span class=" text-gray-500 text-3xl animate-pulse "><i class="fas fa-envelope-open"></i></span></div>
+                                        <div class="w-full custom-width bg-white mt-4 mr-40 ml-4"></div>
+                                    </div>
+                                    <div class="flex flex-wrap">
+                                        <div class="lg:w-1/3 w-full bg-black border border-gray-800 p-8 relative">
+                                            <div class="w-full">
+                                                <h2 class="text-yellow-400 uppercase font-bold text-xl">Phone</h2>
+                                                <p class="py-4"><span class=" text-gray-500 mr-2"><i class="fas fa-phone-alt"></i></span> <span class="text-white">+88 01710-562222</span></p>
+                                            </div>
+                                            <div class="w-full">
+                                                <h2 class="text-yellow-400 uppercase font-bold text-xl">Email</h2>
+                                                <p class="py-4"><span class=" text-gray-500 mr-2"><i class="fas fa-envelope"></i></span> <span class="text-white">sohan@codmen.net</span></p>
+                                            </div>
+                                            <div class="w-full">
+                                                <h2 class="text-yellow-400 uppercase font-bold text-xl">Skype</h2>
+                                                <p class="py-4"><span class=" text-gray-500 mr-2"><i class="fab fa-skype"></i></span> <span class="text-white">ikbalmahmudsohan@gmail.com</span></p>
+                                            </div>
+                                            <div class="w-full">
+                                                <h2 class="text-yellow-400 uppercase font-bold text-xl">Address</h2>
+                                                <p class="py-4"><span class=" text-gray-500 mr-2"><i class="fas fa-home"></i></span> <span class="text-white">khulna,bangladesh</span></p>
+                                            </div>
+                                            <ul class="flex">
+                                                <li class=" cursor-pointer px-2"><a class="inline-block w-8 h-8 p-1 rounded-full text-center bg-blue-900 text-white" href="https://www.facebook.com/sohanvai1996"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li class=" cursor-pointer px-2"><a class="inline-block w-8 h-8 p-1 rounded-full text-center bg-blue-500 text-white" href="https://www.facebook.com/sohanvai1996"><i class="fab fa-twitter"></i></a></li>
+                                                <li class=" cursor-pointer px-2"><a class="inline-block w-8 h-8 p-1 rounded-full text-center bg-red-500 text-white" href="https://www.facebook.com/sohanvai1996"><i class="fab fa-google-plus-g"></i></a></li>
+                                                <li class=" cursor-pointer px-2"><a class="inline-block w-8 h-8 p-1 rounded-full text-center bg-blue-600 text-white" href="https://www.facebook.com/sohanvai1996"><i class="fab fa-linkedin-in"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="lg:w-2/3 w-full h-full py-4 px-8">
+                                            <div class="text-white py-2">
+                                                <p class="font-bold leading-8">Feel free to drop me a line</p>
+                                                <p>If you have any suggestion, project or even you want to say Hello.. Please fill out the form below and I will reply you shortly. </p>
+                                            </div>
+                                            <form action="">
+                                            <div class="flex py-4">
+                                                <div class="w-6 pr-4 py-3">
+                                                    <span class="mr-2 text-gray-500 "><i class="fas fa-user-alt"></i></span>
+                                                </div>
+                                                <div class="w-full">
+                                                <input class="bg-transparent mx-4 py-2 w-full outline-none border-b border-gray-700 text-white" type="text" name="name" placeholder="Your name">
+                                                </div>
+                                            </div>
+                                            <div class="py-4 flex">
+                                                <div class="w-6 pr-4 py-3">
+                                                    <span class="mr-2 text-gray-500 "><i class="fas fa-envelope"></i></span>
+                                                </div>
+                                                <div class="w-full">
+                                                <input class="bg-transparent mx-4 py-2 w-full outline-none border-b border-gray-700 text-white" type="text" name="email" placeholder="Your email">
+                                                </div>
+                                            </div>
+                                            <div class="py-4 flex">
+                                                <div class="w-6 pr-4 py-3">
+                                                    <span class="mr-2 text-gray-500 "><i class="fas fa-comments"></i></span>
+                                                </div>
+                                                <div class="w-full">
+                                                    <textarea class="bg-transparent mx-4 py-2 w-full outline-none border-b border-gray-700 text-white" name="" id="" cols="30" rows="3" placeholder="Your comment"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="btn relative w-2/3">
+                                                <input type="submit" name="send-info" class="w-full text-white bg-yellow-400 pt-3 pb-2 uppercase font-bold cursor-pointer" value="send massage"  >
+                                                <span class=" absolute text-white tabsolute top-1/2 left-2/3 transform  -translate-y-1/2 hidden md:block"><i class="fab fa-telegram-plane"></i></span>
+                                            </div>
+                                        </form>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          
+             <!-- modal end-->
+        </div>
+    </div>
+</section>
+<script>
+  
+
+    
+</script>
+<script src="js/style.js"></script>
+</body>
+</html>
